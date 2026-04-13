@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: backend-api
+    env: php
+    rootDir: laravel
+    buildCommand: "composer install --no-dev --optimize-autoloader"
+    startCommand: "php artisan serve --host=0.0.0.0 --port=$PORT"
